@@ -38,6 +38,8 @@ class UserPersister: UserPersistable {
                     }
                     completion(users)
                 }
+            } else {
+                completion([])
             }
         } catch {
             completion([])
